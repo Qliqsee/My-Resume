@@ -1,0 +1,48 @@
+$dWidth: 969px;
+$width: 968px;
+$xsWidth: 300px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
+
+.button {
+  padding: 5px 8px;
+  display: inline-block;
+  color: var(--button);
+  border: 2px solid var(--button);
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  z-index: 1;
+  vertical-align: middle;
+  transition: color 0.5s;
+
+  @include mobile {
+    padding: 6px;
+    font-size: 13px;
+  }
+
+  &::before {
+    content: '';
+    background-color: var(--button);
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.5s;
+    z-index: -1;
+  }
+  &:hover {
+    color: var(--bt);
+  }
+  &:hover::before {
+    width: 100%;
+  }
+}

@@ -1,0 +1,164 @@
+$dWidth: 969px;
+$width: 968px;
+$xsWidth: 300px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
+
+.effects {
+  //   position: absolute;
+
+  .effect1 {
+    width: 0px;
+    position: absolute;
+    height: 0px;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid var(--button);
+    right: 10%;
+    bottom: 10%;
+    animation: scale 2s linear infinite;
+
+    @include mobile {
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid var(--button);
+      right: 10%;
+      bottom: 10%;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      border-bottom: 40px solid var(--button);
+      opacity: 0.6;
+      top: -20px;
+      left: -38px;
+
+      @include mobile {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid var(--button);
+        top: -5px;
+        left: -10px;
+      }
+    }
+  }
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .effect2 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border: 4px solid var(--lt);
+    left: 20%;
+    top: 15%;
+    animation: translate 3s linear infinite;
+
+    @include mobile {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border: 2px solid var(--lt);
+      left: 20% !important;
+      top: 80% !important;
+    }
+  }
+  @keyframes translate {
+    0% {
+      transform: translateX(0px);
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(2);
+      transform: translateX(30px);
+    }
+    100% {
+      transform: translateX(0px);
+      transform: scale(1);
+    }
+  }
+  .effect3 {
+    width: 30px;
+    top: 50%;
+    right: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    justify-content: space-between;
+    animation: topBounce 1s ease-in-out infinite;
+
+    @include mobile {
+      top: 70%;
+      right: 30%;
+    }
+
+    div {
+      background-color: var(--random);
+      height: 3px;
+      width: 3px;
+      margin: 0 3px 8px;
+
+      @include mobile {
+        height: 2px;
+        width: 2px;
+        margin: 0 2px 2px;
+      }
+    }
+  }
+  @keyframes topBounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(25px);
+    }
+  }
+  .effect4 {
+    top: 20%;
+    left: 60%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    animation: spin 10s linear infinite;
+
+    @include mobile {
+      width: 30px;
+      height: 30px;
+      top: 15%;
+      left: 10%;
+    }
+    div {
+      width: 1px;
+      height: 100%;
+      background-color: var(--lt);
+    }
+  }
+}

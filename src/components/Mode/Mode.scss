@@ -1,0 +1,36 @@
+@import '../../global.scss';
+
+.mode {
+  position: fixed;
+  top: 15%;
+  right: 5%;
+  font-size: 25px;
+  box-shadow: var(--os);
+  background-color: var(--skin);
+  border-radius: 50%;
+  width: 40px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+
+  @include mobile {
+    font-size: 16px;
+    width: 25px;
+    top: 10%;
+    height: 23px;
+  }
+
+  .icon {
+    color: var(--dt);
+    &:hover {
+      color: var(--button);
+      cursor: pointer;
+
+      @include mobile {
+        cursor: initial;
+      }
+    }
+  }
+}
