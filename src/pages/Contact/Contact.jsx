@@ -65,7 +65,7 @@ const Contact = () => {
                   <a
                     target='_blank'
                     href='https://twitter.com/agboola_iyanu'
-                    rel='noreferrer'
+                    rel=' noreferrer'
                   >
                     <FontAwesomeIcon icon={faTwitter} />
                   </a>
