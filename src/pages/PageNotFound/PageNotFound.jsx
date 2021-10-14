@@ -3,7 +3,9 @@ import Layout from '../../components/Layout/Layout';
 
 const PageNotFound = () => {
   return (
-    <Layout>Sorry this page does not exist. How did you ever get here?</Layout>
+    <Layout>
+      Ooops! Sorry, this page does not exist. How did you ever get here?
+    </Layout>
   );
 };
 
