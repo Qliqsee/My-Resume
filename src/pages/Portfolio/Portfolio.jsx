@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../../components/Layout/Layout';
 import Button from '../../components/Button/Button';
+import { Link } from 'react-router-dom';
 import './Portfolio.scss';
 
 const Portfolio = () => {
@@ -27,13 +28,9 @@ const Portfolio = () => {
                   <span>Category:</span> Website
                 </div>
                 <div className='detailsitem'>
-                  <a
-                    href='https://qliqseetodo.netlify.app'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
+                  <Link to='/' target='_blank' rel='noreferrer'>
                     Visit website
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

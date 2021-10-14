@@ -26,6 +26,21 @@ html {
 body {
   height: 100%;
   width: 100%;
+
+  &.light {
+    --skin: whitesmoke;
+    --dt: #28284a;
+    --lt: #777778;
+    --button: #1e608b;
+    --os: 1px 1px 1px 1px #d0d0d0;
+    --lc: #eeecec;
+    --bt: whitesmoke;
+    --dark: #000;
+    --random: #5b6337;
+    --is: #f3f3f5;
+    --hover: #a7a7b4;
+    --alt: black;
+  }
 }
 #root {
   height: 100%;

@@ -1,21 +1,60 @@
+@import '../../global.scss';
+
 .layout {
   min-height: 100%;
   background-color: var(--skin);
   padding-bottom: 20px;
   min-width: 100%;
 
-  &.light {
-    --skin: whitesmoke;
-    --dt: #28284a;
-    --lt: #777778;
-    --button: #1e608b;
-    --os: 1px 1px 1px 1px #d0d0d0;
-    --lc: #eeecec;
-    --bt: whitesmoke;
-    --dark: #000;
-    --random: #5b6337;
-    --is: #f3f3f5;
-    --hover: #a7a7b4;
-    --alt: black;
+  .main2 {
+    .mode {
+      position: fixed;
+      top: 15%;
+      right: 5%;
+      font-size: 25px;
+      box-shadow: var(--os);
+      background-color: var(--skin);
+      border-radius: 50%;
+      width: 40px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+
+      @include mobile {
+        font-size: 16px;
+        width: 25px;
+        top: 10%;
+        height: 23px;
+      }
+
+      .icon {
+        color: var(--dt);
+        &:hover {
+          color: var(--button);
+          cursor: pointer;
+
+          @include mobile {
+            cursor: initial;
+          }
+        }
+      }
+    }
   }
+
+  // &.light {
+  //   --skin: whitesmoke;
+  //   --dt: #28284a;
+  //   --lt: #777778;
+  //   --button: #1e608b;
+  //   --os: 1px 1px 1px 1px #d0d0d0;
+  //   --lc: #eeecec;
+  //   --bt: whitesmoke;
+  //   --dark: #000;
+  //   --random: #5b6337;
+  //   --is: #f3f3f5;
+  //   --hover: #a7a7b4;
+  //   --alt: black;
+  // }
 }
