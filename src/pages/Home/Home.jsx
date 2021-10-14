@@ -24,7 +24,7 @@ const Home = () => {
         </div>
         <div className='section2'>
           <div className='intro'>
-            <div className='small'>Hello 👋</div>
+            <div className='small'>Hello,</div>
             <div className='big'>I&apos;m Agboola Iyanu</div>
             <div className='medium' ref={roleRef}></div>
             <div className='more'>
