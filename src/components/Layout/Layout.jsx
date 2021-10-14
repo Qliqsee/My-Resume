@@ -21,12 +21,12 @@ export default function Layout({ children }) {
       await localStorage.setItem('theme', 'darkTheme');
     }
   };
-  let modeIcon;
-  if (localStorage.getItem('theme') === 'darkTheme') {
-    modeIcon = <FontAwesomeIcon icon={faSun} />;
-  } else if (localStorage.getItem('theme') === 'lightTheme') {
-    modeIcon = <FontAwesomeIcon icon={faMoon} />;
-  }
+  // let modeIcon;
+  // if (localStorage.getItem('theme') === 'darkTheme') {
+  //   modeIcon = <FontAwesomeIcon icon={faSun} />;
+  // } else if (localStorage.getItem('theme') === 'lightTheme') {
+  //   modeIcon = <FontAwesomeIcon icon={faMoon} />;
+  // }
 
   useEffect(() => {
     if (localStorage.getItem('theme') === 'darkTheme') {
@@ -49,7 +49,13 @@ export default function Layout({ children }) {
         <div>
           <div className='main2'>
             <div className='mode' onClick={activeMode}>
-              <div className='icon'>{modeIcon}</div>
+              <div className='icon'>
+                {mode ? (
+                  <FontAwesomeIcon icon={faMoon} />
+                ) : (
+                  <FontAwesomeIcon icon={faSun} />
+                )}
+              </div>
             </div>
           </div>
           <div className='section-3'>{children}</div>
