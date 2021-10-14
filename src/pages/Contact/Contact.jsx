@@ -44,13 +44,31 @@ const Contact = () => {
             <div className='smallcard socials'>
               <div className='icon'>
                 <span>
-                  <FontAwesomeIcon icon={faGithub} />
+                  <a
+                    target='_blank'
+                    href='https://github.com/Qliqsee'
+                    rel='noreferrer'
+                  >
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
                 </span>{' '}
                 <span>
-                  <FontAwesomeIcon icon={faLinkedin} />
+                  <a
+                    target='_blank'
+                    href='https://linkedin.com/in/iyanu-agboola-314488214'
+                    rel='noreferrer'
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </a>
                 </span>{' '}
                 <span>
-                  <FontAwesomeIcon icon={faTwitter} />
+                  <a
+                    target='_blank'
+                    href='https://twitter.com/agboola_iyanu'
+                    rel='noreferrer'
+                  >
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </a>
                 </span>
               </div>
               <span className='follow'>Follow Me</span>
