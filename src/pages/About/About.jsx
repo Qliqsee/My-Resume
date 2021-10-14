@@ -101,7 +101,7 @@ const About = () => {
                         <span> Goshen Christian Academy, Bacita</span>
                       </div>
                       <div className='bio'>
-                        Yes, seconadary school memories are very nostalgic.
+                        Yes, secondary school memories are very nostalgic.
                         Goshen Christian Academy groomed me. A very efficient
                         place for learning in my opinion. I opted in for the
                         sciences even when I thought I was best suited for Arts
