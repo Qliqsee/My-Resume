@@ -51,25 +51,26 @@ $xsWidth: 300px;
       width: 30%;
 
       @include mobile {
-        width: 50%;
-        margin: auto;
-        padding: 0;
+        // width: 50%;
+        // margin: auto;
+        // padding: 0;
+        display: none;
       }
 
       img {
         height: 400px;
         width: 90%;
-        border: 1px solid var(--lc);
+        // border: 1px solid var(--lc);
         padding: 10px;
 
-        @include mobile {
-          height: 300px;
-          width: 100%;
-        }
+        // @include mobile {
+        //   height: 300px;
+        //   width: 100%;
+        // }
 
-        @include xsMobile {
-          height: 200px;
-        }
+        // @include xsMobile {
+        //   height: 200px;
+        // }
       }
     }
     .right {
