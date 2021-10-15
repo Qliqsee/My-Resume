@@ -133,7 +133,7 @@ const About = () => {
                   <div className='timeline'>
                     <div className='timelineitem'>
                       <div className='date'>
-                        <span>2021 - till date</span>
+                        <span>2017 - till date</span>
                       </div>
                       <div className='degree'>
                         Freelance Frontend Dev |
