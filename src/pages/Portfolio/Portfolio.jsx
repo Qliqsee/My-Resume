@@ -127,6 +127,35 @@ const Portfolio = () => {
 
           <div className='carditems'>
             <div className='image'>
+              <img className='' src='/img7.png' alt='img' />
+            </div>
+            <div className='info'>
+              <div className='head'>React Forms</div>
+              <div className='details'>
+                <div className='detailsitem'>
+                  <span>Date:</span> A simple React forms app wit steps
+                </div>
+                <div className='detailsitem'>
+                  <span>Technology Used:</span> React, Sass
+                </div>
+                <div className='detailsitem'>
+                  <span>Category:</span> Website
+                </div>
+                <div className='detailsitem'>
+                  <a
+                    href='https://figma-wizard.vercel.app/'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    Visit website
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='carditems'>
+            <div className='image'>
               <img className='' src='/img5.png' alt='img' />
             </div>
             <div className='info'>
